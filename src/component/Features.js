@@ -1,11 +1,12 @@
 import React from 'react'
 import '../CSS/features.css'
+import logo from '../IMG/logo.jpg'
 
 function Features() {
   return (
     <>
       <div className='main-container'>
-        <div className='feature-title'>Designed for Your Ease</div>
+        <div className='feature-title'>Designed for Your <span className='highlight'>Ease</span></div>
 
         <div className='features-container'>
 
@@ -39,6 +40,8 @@ function Features() {
 
           <div className='mid-box'>
             <img src='https://png.pngtree.com/png-clipart/20230206/ourmid/pngtree-cell-phone-mockup-png-image_6584021.png' />
+            <button>Register Now &#8594;</button>
+            <img src={logo} alt='logo' className='logo' />
           </div>
 
           <div className='right-box'>

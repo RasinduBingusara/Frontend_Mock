@@ -1,5 +1,6 @@
 import React from 'react'
 import '../CSS/hero.css'
+import heroImg from '../IMG/hero-img.jpg'
 
 function Hero() {
   return (
@@ -7,14 +8,14 @@ function Hero() {
       <div className='hero-container'>
 
         <div className='hero-left'>
-          <div className='title'>One Platform</div>
-          <div className='title'>Multiple Solutions</div>
+          <div className='title'>One <span className='highlight'>Platform</span></div>
+          <div className='title'>Multiple <span className='highlight'>Solutions</span></div>
           <div className='subtitle'>Lorem ipsum odor amet, consectetuer adipiscing elit. Ex pulvinar platea, vulputate commodo inceptos nam.</div>
           <div className='button-set'><button className='btn-1'>Register For Free &#8594;</button> <button className='btn-2'>Learn More &#8594;</button> </div>
         </div>
 
         <div className='hero-mid'>
-          <img src='https://images.pexels.com/photos/10763771/pexels-photo-10763771.jpeg?auto=compress&cs=tinysrgb&w=600' alt='hero' />
+          <img src={heroImg} alt='hero' />
         </div>
 
         <div className='hero-right'>
