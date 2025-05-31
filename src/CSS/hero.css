@@ -1,0 +1,117 @@
+.hero-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 300px;
+  background-color: #f0f0f0;
+}
+
+.hero-left{
+  width: 400px;
+}
+.hero-left, .hero-mid, .hero-right{
+  height: 100%;
+}
+.hero-mid img{
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-right img{
+  width: 15px;
+  height: auto;
+  object-fit: cover;
+  background-color: #4DAEDB;
+  padding: 6px;
+  border-radius: 100%;
+}
+
+.hero-left .title{
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero-left .subtitle{
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  color: #494949;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hero-left .button-set{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-bottom{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+}
+
+.hero-bottom .cell{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  background-color: #eeeeee;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hero-bottom .cell img{
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.hero-bottom .cell .cell-text{
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
+.cell-text h2{
+  color: #263F82;
+  margin-bottom: -12px;
+  margin-top: -10px;
+}
+.cell-text p{
+  color: #494949;
+  margin-bottom: 0;
+}
+
+.hero-left .btn-1{
+  color: white;
+  background-color: #F47C1F;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.hero-left .btn-2{
+  color: #263F82;
+  background-color: #ffffff;
+  border: solid;
+  border-width: 1px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.hero-left .btn-1, .hero-left .btn-2{
+  margin: 10px 5px;
+}
+.hero-left .btn-1:hover, .hero-left .btn-2:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
