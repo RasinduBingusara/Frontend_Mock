@@ -85,6 +85,10 @@
   align-items: flex-start;
   margin-top: 1vh;
   font-size: 2vh;
+  cursor: pointer;
+}
+.footer-body .footer-mid .footer-links:hover{
+  color: #F47C1F;
 }
 
 .footer-body .footer-right {
@@ -122,6 +126,13 @@
   background-color: #263F82;
   padding: 1vh;
   border-radius: 100%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-body .footer-left .social-icons img:hover {
+  cursor: pointer;
+  background-color: #F47C1F;
+  transform: scale(1.1);
 }
 
 .footer-bottom {
@@ -133,6 +144,7 @@
   .footer-container {
     margin-left: 2vh;
     margin-right: 2vh;
+    padding: 2vh;
   }
   .footer-top {
     flex-direction: column;

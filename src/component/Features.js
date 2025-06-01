@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../CSS/features.css'
 import logo from '../IMG/logo.jpg'
 
 function Features() {
+  const navigate = useNavigate();
   return (
     <>
       <div className='main-container'>
@@ -40,7 +42,7 @@ function Features() {
 
           <div className='mid-box'>
             <img src='https://png.pngtree.com/png-clipart/20230206/ourmid/pngtree-cell-phone-mockup-png-image_6584021.png' />
-            <button>Register Now &#8594;</button>
+            <button onClick={() => navigate('/register')}>Register Now &#8594;</button>
             <img src={logo} alt='logo' className='logo' />
           </div>
 

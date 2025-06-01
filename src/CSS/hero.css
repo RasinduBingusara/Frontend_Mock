@@ -20,7 +20,7 @@
 }
 
 .hero-mid img {
-  width: 80vh;
+  width: 70vh;
   height: auto;
   object-fit: cover;
 }
@@ -57,6 +57,13 @@
   background-color: #4DAEDB;
   padding: 2vh;
   border-radius: 100%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-right img:hover {
+  cursor: pointer;
+  background-color: #263F82;
+  transform: scale(1.1);
 }
 
 .hero-left .button-set {

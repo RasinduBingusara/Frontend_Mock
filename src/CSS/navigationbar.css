@@ -1,5 +1,5 @@
 body {
-  margin-top: 20vh;
+  margin-top: 10vh;
   padding: 0;
   font-family: 'Arial', sans-serif;
 }
@@ -43,6 +43,11 @@ body {
   font-weight: 700;
   color: #000000;
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navigation-bar .nav-links ul li:hover{
+  color: #F47C1F;
 }
 
 .navigation-bar .nav-buttons {
@@ -53,7 +58,7 @@ body {
 }
 
 .navigation-bar .nav-buttons .register-button {
-  font-size: 3vh;
+  font-size: 2.5vh;
   background-color: white;
   border: none;
   padding: 1vh 2vh;
@@ -62,7 +67,7 @@ body {
 }
 
 .navigation-bar .nav-buttons .login-button {
-  font-size: 3vh;
+  font-size: 2.5vh;
   background-color: white;
   border: none;
   padding: 1vh 2vh;
@@ -110,6 +115,9 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  body{
+    margin-top: 15vh;
+  }
   .navigation-bar .logo {
     justify-content: space-between;
     margin-left: 2vh;

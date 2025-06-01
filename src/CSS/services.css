@@ -63,6 +63,7 @@
   .service-main-container {
   margin-left: 2vh;
   margin-right: 2vh;
+  padding: 2vh;
 }
   .service-container {
   flex-direction: column;
