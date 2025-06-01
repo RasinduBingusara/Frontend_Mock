@@ -6,10 +6,12 @@ import Service from './component/Service';
 import WhoWeServe from './component/WhoWeServe';
 import Testimonials from './component/Testimonials';
 import Footer from './component/Footer';
+import NavigationBar from './component/NavigationBar';
 
 function App() {
   return (
     <div className="App">
+      <NavigationBar />
       <Hero />
       <Features />
       <Service />

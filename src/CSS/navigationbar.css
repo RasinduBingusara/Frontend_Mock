@@ -1,0 +1,130 @@
+body {
+  margin-top: 20vh;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  box-shadow: 0 2px 8px rgba(73, 73, 73, 0.15);
+  z-index: 100;
+}
+
+.navigation-bar .logo {
+  margin-left: 10vh;
+  width: 12vh;
+}
+
+.navigation-bar .nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10vh;
+}
+
+.navigation-bar .nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 8vh;
+}
+
+.navigation-bar .nav-links ul li {
+  font-size: 2vh;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+}
+
+.navigation-bar .nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+  margin-right: 10vh;
+}
+
+.navigation-bar .nav-buttons .register-button {
+  font-size: 3vh;
+  background-color: white;
+  border: none;
+  padding: 1vh 2vh;
+  color: #F47C1F;
+  font-weight: 700;
+}
+
+.navigation-bar .nav-buttons .login-button {
+  font-size: 3vh;
+  background-color: white;
+  border: none;
+  padding: 1vh 2vh;
+  color: #000000;
+  font-weight: 700;
+}
+
+.navigation-bar .nav-buttons .register-button div,
+.navigation-bar .nav-buttons .login-button div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.navigation-bar .nav-buttons .register-button img,
+.navigation-bar .nav-buttons .login-button img {
+  width: 4vh;
+  height: auto;
+  margin-right: 1vh;
+}
+
+.navigation-bar .nav-buttons .login-button,
+.navigation-bar .nav-buttons .register-button {
+
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.navigation-bar .nav-buttons .login-button:hover,
+.navigation-bar .nav-buttons .register-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+  .navigation-bar .logo {
+    justify-content: space-between;
+    margin-left: 2vh;
+    width: 12vh;
+  }
+
+  .navigation-bar .nav-links{
+    margin-left: 0;
+  }
+  .navigation-bar .nav-links ul,
+  .navigation-bar .nav-buttons {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
