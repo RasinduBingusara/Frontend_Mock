@@ -3,6 +3,9 @@ import './App.css';
 import Hero from './component/hero';
 import Features from './component/Features';
 import Service from './component/Service';
+import WhoWeServe from './component/WhoWeServe';
+import Testimonials from './component/Testimonials';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -10,6 +13,9 @@ function App() {
       <Hero />
       <Features />
       <Service />
+      <WhoWeServe />
+      <Testimonials/>
+      <Footer/>
     </div>
   );
 }

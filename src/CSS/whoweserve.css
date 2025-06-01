@@ -1,0 +1,21 @@
+.who-we-serve-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 20px;
+
+  margin-left: 250px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+}
+
+.who-we-serve-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #263F82;
+  text-align: left;
+  width: 1100px;
+}
