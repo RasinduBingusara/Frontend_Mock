@@ -1,59 +1,114 @@
-.service-main-container{
+.service-main-container {
   display: grid;
   row-gap: 60px;
-  margin-left: 250px;
-  margin-right: 200px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
-.service-main-container .title-container{
-  font-size: 30px;
+.service-main-container .title-container {
+  font-size: 3vh;
   text-align: left;
 }
 
-.service-main-container .title-container h1{
+.service-main-container .title-container h1 {
   margin: 0;
 }
 
-.service-container{
-  width: 100%;  
-  display:flex;
+.service-container {
+  width: 100%;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.service-box{
+.service-box {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 300px;
-  padding: 60px;
+  width: 40vh;
+  height: 30vh;
+  padding: 6vh;
   border-radius: 10px;
   box-shadow: 0 3px 20px rgba(73, 73, 73, 0.348);
 }
 
-.service-box img{
-  width: 100px;
-  height: 100px;
+.service-box img {
+  width: 10vh;
+  height: 10vh;
   object-fit: cover;
-  padding: 20px;
+  padding: 2vh;
   border-radius: 10px;
 }
-.service-box h2{
-  font-size: 30px;
+
+.service-box h2 {
+  font-size: 3vh;
   font-weight: 700;
   color: black;
   text-align: center;
-  margin: 10px 0 5px 0;
+  margin: 1vh 0 0.5vh 0;
 }
-.service-box p{
-  font-size: 25px;
+
+.service-box p {
+  font-size: 2.5vh;
   font-weight: 400;
   color: #000000;
   text-align: center;
   margin: 0;
 }
+
+@media (max-width: 575.98px) {
+  .service-main-container {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+  .service-container {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+  .service-box {
+    width: 25vh;
+    height: auto;
+    padding: 6vh;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .service-box {
+    width: 30vh;
+    height: 30vh;
+    padding: 6vh;
+    border-radius: 10px;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+
+  .service-container {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+  .service-box {
+    width: 30vh;
+    height: 30vh;
+    padding: 6vh;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .service-box {
+    width: 30vh;
+    height: 40vh;
+    padding: 6vh;
+    border-radius: 10px;
+  }
+} */

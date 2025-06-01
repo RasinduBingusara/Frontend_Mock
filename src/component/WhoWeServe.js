@@ -10,8 +10,8 @@ function WhoWeServe() {
           <p>SRA, KAFA, SRAI, KAFAI, SRI, SK/SMK, School Cooperatives, Kindergartens, Preschools, Daycare, Maahad, Tahfiz Centers, Madrasahs, Parent-Teacher Associations (PIBG), Tuition Centers, Associations</p>
         </div>
         
-        <div>
-          <img src='https://img.icons8.com/?size=100&id=4C2pzaBlIDEO&format=png&color=F47C1F' alt='icon' />
+        <div className='who-we-serve-icon'>
+          <img src='https://static.vecteezy.com/system/resources/previews/046/598/894/non_2x/smiling-muslim-woman-pointing-right-in-blue-hijab-and-shirt-on-transparent-background-png.png' alt='icon' />
         </div>
       </div>
     </>

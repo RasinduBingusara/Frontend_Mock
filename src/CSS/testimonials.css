@@ -1,35 +1,44 @@
 .testimonials-container {
   display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  gap: 100px;
+  gap: 12vh;
   padding: 20px;
 
-  margin-left: 250px;
-  margin-right: 200px;
-  margin-bottom: 100px;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-bottom: 10vh;
 }
 
 .testimonials-title {
-  font-size: 40px;
+  text-align: left;
+  width: 110vh;
+}
+
+.testimonials-title h1 {
+  font-size: 8vh;
   font-weight: 700;
   color: #263F82;
   text-align: left;
-  width: 1100px;
+}
+
+.testimonials-title p {
+  font-size: 3vh;
+  font-weight: 700;
 }
 
 .testimonials-img img{
-  width: 500px;
-  height: 500px;
+  width: 50vh;
+  height: 50vh;
 }
 
 .testimonials-title img{
-  width: 100px;
-  height: 100px;
-  background-color: #263F82;
-  padding: 10px;
+  width: 10vh;
+  height: 10vh;
+  padding: 1vh;
   border-radius: 50%;
 }
 
@@ -37,13 +46,46 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 2vh;
 }
 .testimonials-title .person .person-text h5{
+  font-size: 3vh;
   margin: 0;
 }
 
 .testimonials-title .person .person-text p{
   margin: 0;
-  font-size: 25px;
+  font-size: 2vh;
 }
+
+@media (max-width: 575.98px) {
+  .testimonials-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5vh;
+
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 10vh;
+  }
+
+  .testimonials-title {
+    text-align: left;
+    width: 100%;
+  }
+
+  .testimonials-title h1 {
+    font-size: 4vh;
+  }
+
+  .testimonials-title p {
+    font-size: 2vh;
+    font-weight: 700;
+  }
+
+  .testimonials-img img{
+    width: 30vh;
+    height: auto;
+  }
+}
+

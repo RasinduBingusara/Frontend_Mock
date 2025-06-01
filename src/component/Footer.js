@@ -9,8 +9,7 @@ function Footer() {
 
         <div className='footer-top'>
           <div>
-            <h1>Register With</h1>
-            <h1><span className='highlight'>kedaisekolah.my</span> For Free</h1>
+            <h1>Register With <span className='highlight'>kedaisekolah.my</span> For Free</h1>
           </div>
           <button>Register For Free &#8594;</button>
         </div>
@@ -18,12 +17,12 @@ function Footer() {
         <div className='footer-body'>
 
           <div className='footer-left'>
-            <img src={logo} />
+            <img className='logo' src={logo} />
             <h2>Follow Us On</h2>
-            <div>
-              <img src='' />
-              <img src='' />
-              <img src='' />
+            <div className='social-icons'>
+              <img src='https://img.icons8.com/?size=100&id=oFBTOjfVCkaA&format=png&color=FFFFFF' />
+              <img src='https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=FFFFFF' />
+              <img src='https://img.icons8.com/?size=100&id=K6KK5ISTAWwE&format=png&color=FFFFFF' />
             </div>
           </div>
 
